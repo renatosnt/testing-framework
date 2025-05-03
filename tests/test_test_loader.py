@@ -37,8 +37,3 @@ class TestLoaderTest(TestCase):
         names = loader.get_test_case_names(Test)
         assert names == []
 
-loader = TestLoader()
-suite = loader.make_suite(TestLoaderTest)
-
-runner = TestRunner()
-runner.run(suite)
